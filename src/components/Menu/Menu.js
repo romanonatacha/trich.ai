@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import './Menu.scss'
+import { Link } from 'react-router-dom'
 import { Navbar, NavItem } from 'react-materialize'
+import './Menu.scss'
 
 class Menu extends Component {
     render() {
@@ -9,22 +10,22 @@ class Menu extends Component {
                 <a className='menu__logo'>Logo</a>
                 <Navbar className='menu__links'>
                     <NavItem className='menu__links__logo'>
-                        LOGO
+                        <Link exact to='/'>LOGO</Link>
                     </NavItem>
                     <NavItem className='menu__links__item'>
-                        Solutions
+                        <Link to='/solutions'>Solutions</Link>
                     </NavItem>
                     <NavItem className='menu__links__item'>
-                        Articles
+                        <Link to='/articles'>Articles</Link>
                     </NavItem>
                     <NavItem className='menu__links__item'>
-                        Portfolio
+                        <Link to='/portfolio'>Portfolio</Link>
                     </NavItem>
                     <NavItem className='menu__links__item'>
-                        About
+                        <Link to='/about'>About</Link>
                     </NavItem>
                     <NavItem className='menu__links__item'>
-                        Contact
+                        <Link to='/contact'>Contact</Link>
                     </NavItem>
                 </Navbar>
             </div>

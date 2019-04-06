@@ -3,25 +3,25 @@ import { Link, Route, Router } from 'react-router'
 import 'materialize-css/dist/js/materialize.min.js'
 import './App.scss'
 import Menu from '../Menu/Menu'
+import Home from '../Home/Home'
+import About from '../About/About'
+import Solutions from '../Solutions/Solutions';
+import Articles from '../Articles/Articles';
+import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
 
 class App extends Component {
   render() {
     return (
-      <Route exact path='/' render={() => (
-        <div className="App">
-          <Menu />
-          <header className="App-header">
-            <a
-              className="App-link"
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn React
-          </a>
-          </header>
-        </div>
-      )} />
+      <div>
+        <Menu />
+        <Route exact path='/' component={Home} />
+        <Route exact path='/solutions' component={Solutions} />
+        <Route exact path='/articles' component={Articles} />
+        <Route exact path='/portfolio' component={Portfolio} />
+        <Route exact path='/about' component={About} />
+        <Route exact path='/contact' component={Contact} />
+      </div>       
     )
   }
 }
