@@ -1,0 +1,28 @@
+@import '../../variables.scss';
+
+.menu {
+    background-color: black;
+    content: 'logo';
+
+    &__logo {
+        display: none;
+        @include mobile-tablet {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 0;
+            color: white;
+            z-index: 9;
+        }
+    }
+
+    &__links {
+        background-color: inherit;
+        @include mobile-tablet {
+            position: relative;
+            &__logo {
+                display: none !important;
+            }
+        }
+    }
+}
