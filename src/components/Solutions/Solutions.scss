@@ -4,4 +4,17 @@
     &__header {
         @include header;
     }
+    &__links {
+        text-align: center;
+        margin-bottom: 50px;
+        &__item {
+            display: inline-block;
+            padding: 10px;
+            &.active {
+                font-weight: bold;
+                border-bottom: 2px solid $main-blue;
+                font-size: 16px;
+            }
+        }
+    }
 }

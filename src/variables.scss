@@ -1,4 +1,7 @@
 // variables
+$main-blue: #71c1ec;
+$gray: #555;
+
 $tablet-width: 768px;
 $desktop-width: 992px;
 
@@ -9,11 +12,24 @@ $desktop-width: 992px;
   height: 300px;
   margin-bottom: 80px;
   background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 130px;
 }
 
 @mixin card {
   width: 50%;
-  margin: 0 auto;
+  margin: 30px auto;
+  @include border;
+}
+
+@mixin border {
+  border: solid 1px #eee;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 14px 0 rgba(0,0,0,.04);
+  box-shadow: 0 1px 14px 0 rgba(0,0,0,.04);
 }
 
 // media queries

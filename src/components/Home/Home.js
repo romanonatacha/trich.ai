@@ -10,7 +10,7 @@ class Home extends Component {
 			<div className="content">
 				<div id="large-header" className="large-header">
 					<canvas id="demo-canvas"></canvas>
-					<h1 className="main-title">Connect <span className="thin">Three</span></h1>
+					<h1 className="main-title">trich.ai</h1>
 				</div>
 			</div>
 		</div>

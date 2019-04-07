@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.articles {
+    &__header {
+        @include header;
+    }
+    &__cards {
+        width: 70%;
+        margin: 0 auto 80px;
+        &__item {
+            @include border;
+            &__img.card-image {
+                height: 40%;
+            }
+            &__title {
+
+            }
+            &__text {
+
+            }
+            &__link a {
+                color: $main-blue !important;
+                font-weight: 700;
+            }
+        }
+    }
+}

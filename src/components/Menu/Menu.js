@@ -7,10 +7,10 @@ class Menu extends Component {
     render() {
         return (
             <div className='menu'>
-                <a className='menu__logo'>Logo</a>
+                <a href='http://localhost:3000/' className='menu__logo'>trich.ai</a>
                 <Navbar className='menu__links'>
                     <NavItem className='menu__links__logo'>
-                        <Link to='/'>LOGO</Link>
+                        <a href='http://localhost:3000/'>trich.ai</a>
                     </NavItem>
                     <NavItem className='menu__links__item'>
                         <Link to='/solutions'>Solutions</Link>

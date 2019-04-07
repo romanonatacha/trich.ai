@@ -1,7 +1,29 @@
 @import '../../variables.scss';
 
 .industries {
-    &__card {
-        @include card;
+    width: 60%;
+    margin: 0 auto;
+    &__list {
+        display: grid;
+        grid-gap: 63px 20px;
+        grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+        &__item {
+            @include border;
+            padding: 20px;
+            &__icon {
+                color: $main-blue;
+            }
+            &__title {
+                font-size: 18px;
+                color: #333;
+                margin-top: 23px;
+                font-weight: 700;
+            }
+            &__text {
+                font-size: 14px;
+                color: $gray;
+                line-height: 2;
+            }
+        }
     }
 }

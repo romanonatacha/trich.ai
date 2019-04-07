@@ -3,7 +3,7 @@
 .menu {
     background-color: black;
     content: 'logo';
-
+    padding: 0 30px;
     &__logo {
         display: none;
         @include mobile-tablet {
@@ -13,15 +13,34 @@
             right: 0;
             color: white;
             z-index: 9;
+            font-weight: 600;
+            font-size: 20px;
         }
     }
 
     &__links {
         background-color: inherit;
+        &__logo {
+            a {
+                font-weight: 600;
+                font-size: 20px;
+                margin-right: 100px;
+            }
+        }
         @include mobile-tablet {
             position: relative;
             &__logo {
                 display: none !important;
+            }
+        }
+        &__item a {
+            font-weight: 600;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+            &:hover,
+            &:focus {
+                color: $main-blue;
             }
         }
     }
