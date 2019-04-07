@@ -1,0 +1,7 @@
+@import '../../variables.scss';
+
+.use-cases {
+    &__card {
+        @include card;
+    }
+}

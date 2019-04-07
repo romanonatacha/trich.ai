@@ -10,7 +10,7 @@ class Menu extends Component {
                 <a className='menu__logo'>Logo</a>
                 <Navbar className='menu__links'>
                     <NavItem className='menu__links__logo'>
-                        <Link exact to='/'>LOGO</Link>
+                        <Link to='/'>LOGO</Link>
                     </NavItem>
                     <NavItem className='menu__links__item'>
                         <Link to='/solutions'>Solutions</Link>

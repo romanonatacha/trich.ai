@@ -1,6 +1,22 @@
+// variables
 $tablet-width: 768px;
 $desktop-width: 992px;
 
+
+// mixins
+@mixin header {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 80px;
+  background-color: black;
+}
+
+@mixin card {
+  width: 50%;
+  margin: 0 auto;
+}
+
+// media queries
 @mixin mobile-tablet {
   @media (max-width: #{$desktop-width}) {
     @content;
