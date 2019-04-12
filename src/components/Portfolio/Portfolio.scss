@@ -1,0 +1,7 @@
+@import '../../variables.scss';
+
+.portfolio {
+    &__header {
+        @include header;
+    }
+}

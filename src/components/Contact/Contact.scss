@@ -1,0 +1,12 @@
+@import '../../variables.scss';
+
+.contact {
+    &__header {
+        @include header;
+    }
+    &__container {
+        &__form {
+            @include border;
+        }
+    }
+}

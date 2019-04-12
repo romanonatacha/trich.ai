@@ -1,14 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Portfolio.scss'
 
-class Portfolio extends Component {
-  render() {
-    return (
-      <div>
-        Portfolio
-      </div>       
-    )
-  }
-}
+const Portfolio = () => (
+  <div className='portfolio'>
+    <div className='portfolio__header'>
+      portfolio blablabla
+    </div>
+  </div> 
+)
 
 export default Portfolio

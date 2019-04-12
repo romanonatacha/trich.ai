@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Link, Route, Router } from 'react-router'
+import React from 'react'
+import { Route } from 'react-router'
 import 'materialize-css/dist/js/materialize.min.js'
 import './App.scss'
 import Menu from '../Menu/Menu'
@@ -11,21 +11,17 @@ import Articles from '../Articles/Articles';
 import Portfolio from '../Portfolio/Portfolio';
 import Contact from '../Contact/Contact';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Menu />
-        <Route exact path='/' component={Home} />
-        <Route path='/solutions' component={Solutions} />
-        <Route exact path='/articles' component={Articles} />
-        <Route exact path='/portfolio' component={Portfolio} />
-        <Route exact path='/about' component={About} />
-        <Route exact path='/contact' component={Contact} />
-        <Footer />
-      </div>       
-    )
-  }
-}
+const App = () => (
+  <>
+    <Menu />
+    <Route exact path='/' component={Home} />
+    <Route path='/solutions' component={Solutions} />
+    <Route exact path='/articles' component={Articles} />
+    <Route exact path='/portfolio' component={Portfolio} />
+    <Route exact path='/about' component={About} />
+    <Route exact path='/contact' component={Contact} />
+    <Footer />
+  </>       
+)
 
 export default App

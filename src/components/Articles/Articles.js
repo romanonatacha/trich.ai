@@ -1,12 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Articles.scss'
 
-class Articles extends Component {
-  render() {
-    return (
-      <div className='articles'>
+const Articles = () => (
+  <div className='articles'>
         <div className='articles__header'>
-          Solutions
+          articles blablabla
         </div>
         <div className="articles__cards row">
           <div className="col s12 m4">
@@ -101,8 +99,6 @@ class Articles extends Component {
           </div>
         </div>    
       </div>
-    )
-  }
-}
+)
 
 export default Articles

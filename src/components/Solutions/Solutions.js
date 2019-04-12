@@ -1,22 +1,14 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 import { Route } from 'react-router'
 import './Solutions.scss'
-import UseCasesCard from '../UseCasesCard/UseCasesCard'
+import ApplicationsCard from '../ApplicationsCard/ApplicationsCard'
 import IndustriesCard from '../IndustriesCard/IndustriesCard'
 
-class Solutions extends Component {
-  render() {
-    return (
-      <div className='solutions'>
-        <div className='solutions__header'>
-          solutions blablabla
-        </div>
-        <Route exact path='/solutions' component={IndustriesCard} />
-        <Route exact path='/solutions/cases' component={UseCasesCard} />
-      </div>
-    )
-  }
-}
+const Solutions = () => (
+  <div className='solutions'>
+    <Route exact path='/solutions' component={ApplicationsCard} />
+    <Route exact path='/solutions/industries' component={IndustriesCard} />
+  </div>
+)
 
 export default Solutions
