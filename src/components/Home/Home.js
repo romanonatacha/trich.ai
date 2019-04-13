@@ -6,7 +6,10 @@ const Home = () => (
 			<div className="content">
 				<div id="large-header" className="large-header">
 					<canvas id="demo-canvas"></canvas>
-					<h1 className="main-title">trich.ai</h1>
+					<div className='header'>
+						<h1 className="header__title main-title">trich.ai solutions</h1>
+						<p className='header__subtitle'>Intelligent solutions to extract the most<br></br>valuable insights of your data.</p>
+					</div>
 				</div>
 			</div>
 	</div>

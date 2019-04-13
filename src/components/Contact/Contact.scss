@@ -5,8 +5,36 @@
         @include header;
     }
     &__container {
+        width: 50%;
+        margin: 0 auto 80px;;
         &__form {
             @include border;
+            form {
+                padding: 0 130px;
+
+                input[type=text]:not(.browser-default):focus:not([readonly]),
+                textarea.materialize-textarea:focus:not([readonly]) {
+                    &:focus {
+                        border-bottom: 1px solid $main-blue;
+                        box-shadow: 0 1px 0 0 $main-blue;
+                    }
+                }
+                input[type=text]:not(.browser-default):focus:not([readonly]) + label {
+                    color: $main-blue;
+                }
+                label {
+                    color: $gray;
+                }
+            }
+            &__btn {
+                background-color: $main-blue;
+                &:hover {
+                    background-color: darken($main-blue, 20%);
+                }
+                &:focus {
+                    background-color: darken($main-blue, 30%);
+                }
+            }
         }
     }
 }

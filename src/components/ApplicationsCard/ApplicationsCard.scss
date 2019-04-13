@@ -4,18 +4,17 @@
     width: 60%;
     margin: 0 auto;
     &__list {
-        display: grid;
-        grid-gap: 63px 20px;
-        grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+        @include card;
         &__item {
             @include border;
             padding: 20px;
-            &__icon {
+            i {
                 color: $main-blue;
+                font-size: 30px;
             }
             &__title {
                 font-size: 18px;
-                color: #333;
+                color: $gray;
                 margin-top: 23px;
                 font-weight: 700;
             }

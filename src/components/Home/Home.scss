@@ -1,8 +1,30 @@
+@import '../../variables.scss';
+
+.header {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 45%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	text-align: left;
+	&__title {
+		font-weight: bold;
+	}
+	&__subtitle {
+		color: white;
+		font-size: 36px;
+	}
+}
+
 /* Header */
 .large-header {
 	position: relative;
 	width: 100%;
-	background: #333;
+	background: url('../../img/earth.jpg');
 	overflow: hidden;
 	background-size: cover;
 	background-position: center center;
@@ -12,29 +34,8 @@
 .demo-1 .large-header {
 	background-color:black ;
 } 
-.demo-3 .large-header {
-	background: #7f8c8d;
-}
 
-.demo-4 .large-header {
-	background: #f9f1e9;
-}
-
-.main-title {
-	position: absolute;
-	margin: 0;
-	padding: 0;
-	color: #f9f1e9;
-	text-align: center;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate3d(-50%,-50%,0);
-	transform: translate3d(-50%,-50%,0);
-}
-
-.demo-1 .main-title, 
-.demo-3 .main-title {
-	text-transform: uppercase;
+.demo-1 .main-title {
 	font-size: 4.2em;
 	letter-spacing: 0.1em;
 }
@@ -104,7 +105,7 @@
 
 body {
 	background: #fff;
-	color: #383a3c;
+	color: $gray;
 	font-weight: 400;
 	font-size: 1em;
 	line-height: 1.25;

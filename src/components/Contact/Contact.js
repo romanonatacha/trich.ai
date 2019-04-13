@@ -4,7 +4,7 @@ import './Contact.scss'
 const Contact = () => (
   <div className='contact'>
     <div className='contact__header'>
-      contact blablabla
+      to receive your response or quotation<br></br>contact us
     </div>
     <div className='contact__container'>
       <div className='contact__container__form'>
@@ -16,31 +16,33 @@ const Contact = () => (
             <input type="hidden" name="email" value="trichcontact@gmail.com"/>  
           </div>
           <div className='row'>
-            <div className='input-field col s6'> 
+            <div className='input-field col s12'> 
               <input type="text" size="30" name="nome"/> 
               <label>name</label>
             </div>   
           </div>
           <div className='row'>
-            <div className='input-field col s6'>
+            <div className='input-field col s12'>
               <input type="text" size="30" name="replyto"/>
               <label>email</label>
             </div>
           </div>
-          <div className='input-field col s6'>
-            <input type="text" name="subject"/>
-            <label>subject</label>
+          <div className='row'>
+            <div className='input-field col s12'>
+              <input type="text"  name="subject"/>
+              <label>subject</label>
+            </div>
           </div>
           <div className='row'>
-            <div className='input-field col s6'> 
-              <input type="text" size="35" name="Comentarios"/>
+            <div className='input-field col s12'> 
+              <textarea className='materialize-textarea' type="text" size="35" name="Comentarios"></textarea>
               <labe>message</labe>
             </div>
           </div>
           <div className='row'>
             <div class="col s12">
               <div className='input-field inline'> 
-                <input id="email_inline" type="submit" name="BTEnvia" value="Enviar"/> 
+                <input id="email_inline" className='btn contact__container__form__btn' type="submit" name="BTEnvia" value="Send"/> 
               </div> 
             </div>
           </div>

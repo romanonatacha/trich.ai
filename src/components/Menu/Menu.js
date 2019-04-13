@@ -14,10 +14,10 @@ const Menu = () => (
                 <Link to='/solutions'>Solutions</Link>
             </NavItem>
             <NavItem className='menu__links__item'>
-                <Link to='/articles'>Articles</Link>
+                <Link to='/portfolio'>Portfolio</Link>
             </NavItem>
             <NavItem className='menu__links__item'>
-                <Link to='/portfolio'>Portfolio</Link>
+                <Link to='/articles'>Articles</Link>
             </NavItem>
             <NavItem className='menu__links__item'>
                 <Link to='/about'>About</Link>

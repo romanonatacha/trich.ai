@@ -1,6 +1,6 @@
 // variables
 $main-blue: #71c1ec;
-$gray: #555;
+$gray: #333;
 
 $tablet-width: 768px;
 $desktop-width: 992px;
@@ -20,9 +20,9 @@ $desktop-width: 992px;
 }
 
 @mixin card {
-  width: 50%;
-  margin: 30px auto;
-  @include border;
+  display: grid;
+  grid-gap: 63px 20px;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
 }
 
 @mixin border {
