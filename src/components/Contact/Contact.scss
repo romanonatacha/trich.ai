@@ -3,6 +3,14 @@
 .contact {
     &__header {
         @include header;
+        background: url('../../img/machine.jpg') no-repeat center top;
+        background-size: cover;
+        padding-top: 70px;
+        span {
+            font-size: 70px;
+            margin-top: 10px;
+            display: block;
+        }
     }
     &__container {
         width: 50%;

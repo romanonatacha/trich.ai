@@ -3,6 +3,10 @@
 .articles {
     &__header {
         @include header;
+        background: url('../../img/planet.jpg') no-repeat center;
+        background-size: cover;
+        padding-top: 120px;
+        font-size: 40px;
     }
     &__cards {
         width: 70%;
@@ -11,16 +15,30 @@
             @include border;
             &__img.card-image {
                 height: 40%;
+                img {
+                    height: 200px;
+                }
             }
             &__title {
-
+                font-size: 20px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 10px;
             }
             &__text {
-
+                overflow: auto !important;
             }
-            &__link a {
-                color: $main-blue !important;
-                font-weight: 700;
+            &__link {
+                &__a {
+                    color: $main-blue !important;
+                    font-weight: 700;
+                    &:hover {
+                        color: darken($main-blue, 20%) !important;
+                    }
+                    &:focus {
+                        color: darken($main-blue, 30%) !important;
+                    }
+                }
             }
         }
     }

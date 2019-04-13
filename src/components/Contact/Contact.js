@@ -4,7 +4,7 @@ import './Contact.scss'
 const Contact = () => (
   <div className='contact'>
     <div className='contact__header'>
-      to receive your response or quotation<br></br>contact us
+      to receive your quotation<br></br><span>contact us</span>
     </div>
     <div className='contact__container'>
       <div className='contact__container__form'>

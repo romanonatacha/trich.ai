@@ -13,9 +13,9 @@ const Menu = () => (
             <NavItem className='menu__links__item'>
                 <Link to='/solutions'>Solutions</Link>
             </NavItem>
-            <NavItem className='menu__links__item'>
+            {/* <NavItem className='menu__links__item'>
                 <Link to='/portfolio'>Portfolio</Link>
-            </NavItem>
+            </NavItem> */}
             <NavItem className='menu__links__item'>
                 <Link to='/articles'>Articles</Link>
             </NavItem>
