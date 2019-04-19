@@ -7,6 +7,10 @@
         background-size: cover;
         padding-top: 120px;
         font-size: 40px;
+        @include mobile-tablet {
+            font-size: 30px;
+            padding-top: 60px;
+        }
     }
     &__cards {
         width: 70%;
@@ -14,9 +18,19 @@
         &__item {
             @include border;
             &__img.card-image {
-                height: 40%;
                 img {
-                    height: 200px;
+                    width: auto;
+                    @include mobile-tablet {
+                        width: 100%;
+                        height: auto;
+                    }
+                    @media screen and (min-width: 601px) {
+                        width: auto;
+                        height: 200px;
+                    }
+                    @media screen and (min-width: 1343px) {
+                        height: 290px;
+                    }
                 }
             }
             &__title {
@@ -40,6 +54,9 @@
                     }
                 }
             }
+        }
+        @include mobile-tablet {
+            width: 90%;
         }
     }
 }

@@ -1,5 +1,26 @@
+@import '../../variables.scss';
+
 .footer {
     background-color: black;
+    clear: both;
+
+    .social-icons {
+      float: right;
+
+      .nav-link {
+        margin: 0 8px;
+        i {
+          font-size: 30px;
+          color: white;
+          &:hover {
+            color: $main-blue;
+          }
+          &:focus {
+            color: darken($main-blue, 20%);
+          }
+        }
+      }
+    }
 }
 
 // sticky footer

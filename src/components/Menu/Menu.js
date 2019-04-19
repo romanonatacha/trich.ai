@@ -11,7 +11,7 @@ const Menu = () => (
                 <a href='http://localhost:3000/'>trich.ai</a>
             </NavItem>
             <NavItem className='menu__links__item'>
-                <Link to='/solutions'>Solutions</Link>
+                <Link data-toggle="collapse" data-target=".sidenav" to='/solutions'>Solutions</Link>
             </NavItem>
             {/* <NavItem className='menu__links__item'>
                 <Link to='/portfolio'>Portfolio</Link>

@@ -17,6 +17,15 @@
 	&__subtitle {
 		color: white;
 		font-size: 36px;
+		@include mobile {
+			font-size: 24px;
+		}
+		@include tablet {
+			font-size: 28px;
+			br {
+				display: none;
+			}
+		}
 	}
 }
 

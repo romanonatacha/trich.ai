@@ -4,6 +4,7 @@ $gray: #333;
 
 $tablet-width: 768px;
 $desktop-width: 992px;
+$mobile-width: 425px;
 
 
 // mixins
@@ -16,6 +17,9 @@ $desktop-width: 992px;
   text-align: center;
   font-weight: 600;
   font-size: 30px;
+  @include mobile-tablet {
+    height: 170px;
+  }
 }
 
 @mixin card {
@@ -40,6 +44,24 @@ $desktop-width: 992px;
 
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width + 1}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin desktopXS {
+  @media (min-width: #{$tablet-width + 1}) {
     @content;
   }
 }

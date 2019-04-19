@@ -4,6 +4,9 @@
     background-color: black;
     content: 'logo';
     padding: 0 30px;
+    @include mobile-tablet {
+        padding: 0;
+    }
     &__logo {
         display: none;
         @include mobile-tablet {
@@ -39,6 +42,15 @@
             letter-spacing: 2px;
             text-transform: lowercase;
             &:hover,
+            &:focus {
+                color: $main-blue;
+            }
+        }
+    }
+    #mobile-nav {
+        background-color: #000000e3;
+        .menu__links__item a {
+            color: white;
             &:focus {
                 color: $main-blue;
             }

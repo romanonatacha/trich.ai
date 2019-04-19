@@ -11,14 +11,31 @@
             margin-top: 10px;
             display: block;
         }
+        @include mobile-tablet {
+            font-size: 22px;
+            padding-top: 40px;
+            span {
+                font-size: 52px;
+                margin-top: 0;
+            }
+        }
     }
     &__container {
         width: 50%;
-        margin: 0 auto 80px;;
+        margin: 0 auto 80px;
+        @include mobile-tablet {
+            width: 90%;
+        }
         &__form {
             @include border;
             form {
                 padding: 0 130px;
+                @include mobile {
+                    padding: 0 40px;
+                }
+                @include tablet {
+                    padding: 0 100px;
+                }
 
                 input[type=text]:not(.browser-default):focus:not([readonly]),
                 textarea.materialize-textarea:focus:not([readonly]) {

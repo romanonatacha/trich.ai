@@ -25,4 +25,7 @@
             }
         }
     }
+    @include mobile-tablet {
+        width: 90%;
+    }
 }

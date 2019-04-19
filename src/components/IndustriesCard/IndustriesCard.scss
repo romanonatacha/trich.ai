@@ -32,4 +32,11 @@
             }
         }
     }
+    @include mobile-tablet {
+        width: 90%;
+        &__info {
+            padding: 20px;
+            font-size: 16px;
+        }
+    }
 }
