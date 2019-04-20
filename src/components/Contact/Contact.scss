@@ -60,6 +60,9 @@
                     background-color: darken($main-blue, 30%);
                 }
             }
+            .gotcha {
+                display: none;
+            }
         }
     }
 }
