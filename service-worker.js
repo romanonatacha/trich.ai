@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/trich.ai/precache-manifest.311e3de84b7a74a58c8e9155a2a643ce.js"
+  "/trich.ai/precache-manifest.0c7576a4d92fde1a44bc7f3b87ce3e0e.js"
 );
 
 workbox.clientsClaim();
