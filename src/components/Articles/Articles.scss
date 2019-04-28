@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .articles {
+    margin-top: 64px;
     &__header {
         @include header;
         background: url('../../img/planet.jpg') no-repeat center;

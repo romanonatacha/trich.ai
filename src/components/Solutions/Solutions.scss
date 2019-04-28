@@ -1,20 +1,27 @@
 @import '../../variables.scss';
 
 .solutions {
+    margin-top: 64px;
     &__header {
         @include header;
     }
     &__links {
         text-align: center;
-        margin: 50px 0;
+        margin: 114px 0 50px;
         &__item {
             display: inline-block;
             padding: 10px;
             font-size: 22px;
+            @include mobile {
+                font-size: 19px;
+            }
             &.active {
                 font-weight: bold;
                 border-bottom: 2px solid $main-blue;
                 font-size: 23px;
+                @include mobile {
+                    font-size: 20px;
+                }
             }
         }
     }

@@ -79,7 +79,7 @@ class Contact extends Component {
             <form className='col s12' action="http://formmail.kinghost.net/formmail.cgi" method="POST">
               <div className='row'>
                 <input type="hidden" name="recipient" value="contact@trich.ai" />
-                <input type="hidden" name="redirect" value='https://trich.ai/contact/success' />
+                <input type="hidden" name="redirect" value='https://trich.ai/#/contact/success' />
                 <input type="hidden" name="subject" value="subject" />
                 <input type="hidden" name="email" value="contact@trich.ai" />
                 <input type="text" name="_gotcha" className='gotcha' />

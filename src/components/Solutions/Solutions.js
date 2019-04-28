@@ -6,8 +6,8 @@ import IndustriesCard from '../IndustriesCard/IndustriesCard'
 
 const Solutions = () => (
   <div className='solutions'>
-    <Route exact path={process.env.PUBLIC_URL + '/solutions'} component={ApplicationsCard} />
-    <Route exact path={process.env.PUBLIC_URL + '/solutions/industries'} component={IndustriesCard} />
+    <Route exact path='/solutions' component={ApplicationsCard} />
+    <Route exact path='/solutions/industries' component={IndustriesCard} />
   </div>
 )
 

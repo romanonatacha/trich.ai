@@ -9,11 +9,13 @@ const About = () => (
       <div className='about__container__info text'>
         <div className='about__container__info__title'>who?</div>
         <div className='about__container__info__text'>
-          A startup that seeks to add value in big data and AI solutions.
-          Bringing together great professionals of the area, with extensive experience in the area of technology and mainly data.
-          Trying to develop our solutions as cheaply as possible using open source solutions.
-          We have already worked with data from the largest companies in Latin America in several different industries.
-          We are passionate about data and we will be very happy to know how we could help you.
+        We are a multidisciplinary and decentralized team of people with a lot of experience in analytics and big data. We have some of the most recognized professionals on the market, willing to find the best solutions for your data, seeking to implement solutions, a new vision on how data works and also the establishment of a data-driven culture.
+        <br></br><br></br>
+        Our headquarters are in São Paulo - Brazil, but we have professionals from all over the world, such as Canada, India, Germany, Senegal, Amsterdam, Spain and more.
+        <br></br><br></br>
+        We strive to the maximum, to use open-source solutions for our clients and we have a lot of experience working with this.
+        <br></br><br></br>
+        To get your quote, click on the "Contact" tab and let us know how you think data science can help you increase your earnings.
         </div>
       </div>
     </div>

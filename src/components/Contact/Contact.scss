@@ -1,6 +1,7 @@
 @import '../../variables.scss';
 
 .contact {
+    margin-top: 64px;
     &__header {
         @include header;
         background: url('../../img/machine.jpg') no-repeat center top;

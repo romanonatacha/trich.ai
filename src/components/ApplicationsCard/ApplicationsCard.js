@@ -63,10 +63,10 @@ const ApplicationsCard = () => (
     <div className='applications'>
         <ul className='solutions__links'>
             <li className='solutions__links__item active'>
-                <Link to={process.env.PUBLIC_URL + '/solutions'}>applications</Link>
+                <Link to='/solutions'>applications</Link>
             </li>
             <li className='solutions__links__item'>
-                <Link to={process.env.PUBLIC_URL + '/solutions/industries'}>industries</Link>
+                <Link to='/solutions/industries'>industries</Link>
             </li>
         </ul>
         <div className="row applications__list">

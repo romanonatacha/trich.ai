@@ -11,19 +11,19 @@ const Menu = () => (
                 <a href='https://trich.ai'>trich.ai</a>
             </NavItem>
             <NavItem className='menu__links__item'>
-                <Link data-toggle="collapse" data-target=".sidenav" to={process.env.PUBLIC_URL + '/solutions'}>Solutions</Link>
+                <Link data-toggle="collapse" data-target=".sidenav" to='/solutions'>Solutions</Link>
             </NavItem>
             {/* <NavItem className='menu__links__item'>
                 <Link to='/portfolio'>Portfolio</Link>
             </NavItem> */}
             <NavItem className='menu__links__item'>
-                <Link to={process.env.PUBLIC_URL + '/articles'}>Articles</Link>
+                <Link to='/articles'>Articles</Link>
             </NavItem>
             <NavItem className='menu__links__item'>
-                <Link to={process.env.PUBLIC_URL + '/about'}>About</Link>
+                <Link to='/about'>About</Link>
             </NavItem>
             <NavItem className='menu__links__item'>
-                <Link to={process.env.PUBLIC_URL + '/contact'}>Contact</Link>
+                <Link to='/contact'>Contact</Link>
             </NavItem>
         </Navbar>
     </div>
