@@ -20,11 +20,12 @@ const Footer = () => (
         </div>
         <div className="footer-copyright">
             <div className="container">
-            <a className="grey-text text-lighten-4" href="#!">
-                TRICH SOLUCOES EM DADOS E TECNOLOGIA - 29.514.225/0001-48</a>
-            <a className='right' href='https://www.linkedin.com/in/natacha-romano/' target='_blank' rel="noopener noreferrer">
-                © 2019 developed by Natacha Romano 
-            </a>
+                <a className="company" href="#!">
+                    TRICH SOLUCOES EM DADOS E TECNOLOGIA - 29.514.225/0001-48
+                </a>
+                <a className='creator' href='https://www.linkedin.com/in/natacha-romano/' target='_blank' rel="noopener noreferrer">
+                    © 2019 developed by Natacha Romano 
+                </a>
             </div>
         </div>
     </footer>

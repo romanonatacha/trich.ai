@@ -16,10 +16,13 @@
             right: 0;
             color: white;
             z-index: 9;
-            font-weight: 600;
             font-size: 38px;
             padding: 5px 20px;
             font-family: $logo-font;
+            &:hover,
+            &:focus {
+                color: white;
+            }
         }
     }
 
@@ -46,6 +49,12 @@
             font-size: 16px;
             letter-spacing: 2px;
             text-transform: lowercase;
+            &:hover,
+            &:focus {
+                color: $main-blue;
+            }
+        }
+        .sidenav-trigger {
             &:hover,
             &:focus {
                 color: $main-blue;

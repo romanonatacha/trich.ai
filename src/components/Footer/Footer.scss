@@ -3,7 +3,7 @@
 .footer {
     background-color: black;
     clear: both;
-    padding: 20px;
+    padding: 20px 0;
 
     .social-icons {
       float: right;
@@ -13,6 +13,9 @@
         i {
           font-size: 30px;
           color: white;
+          @include mobile {
+            font-size: 20px;
+          }
           &:hover {
             color: $main-blue;
           }
@@ -22,10 +25,35 @@
         }
       }
     }
-    &-copyright a {
-      color: white;
-      &:hover {
-        color: $main-blue;
+    &-copyright {
+      @include mobile-tablet {
+        text-align: center;
+      }
+      a {
+        color: white;
+        &:hover {
+          color: $main-blue;
+        }
+      }
+      .company {
+        @include mobile-tablet {
+          margin-bottom: 20px;
+          display: block;
+        }
+        @include mobile {
+          font-size: 12px;
+        }
+      }
+      .creator {
+        @include desktop {
+          float: right;
+        }
+        @include mobile-tablet {
+          display: block;
+        }
+        @include mobile {
+          font-size: 10px;
+        }
       }
     }
 }
