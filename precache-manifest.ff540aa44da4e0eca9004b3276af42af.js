@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/trich.ai/static/media/machine.12c0bd8a.jpg"
   },
   {
-    "revision": "67c2910f451bf6581ade179c15179b57",
+    "revision": "cb322f4e1c29a08f181e22c4c698e342",
     "url": "/trich.ai/index.html"
   }
 ];
