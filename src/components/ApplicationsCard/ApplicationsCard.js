@@ -72,7 +72,7 @@ const ApplicationsCard = () => (
         <div className="row applications__list">
             {instustriesItems.map(item =>
                 <div key={item.key} className="applications__list__item">
-                    {/* <i class="applications__list__item__icon small material-icons">{item.icon}</i> */}
+                    {/* <i className="applications__list__item__icon small material-icons">{item.icon}</i> */}
                     <i className={item.icon}></i>
                     <h3 className='applications__list__item__title'>{item.title}</h3>
                     <p className='applications__list__item__text'>{item.text}</p>

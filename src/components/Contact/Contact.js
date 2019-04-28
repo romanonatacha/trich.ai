@@ -136,7 +136,7 @@ class Contact extends Component {
                 </div>
               </div>
               <div className='row'>
-                <div class="col s12">
+                <div className="col s12">
                   <div className='input-field inline'>
                     <input
                       id="email_inline"

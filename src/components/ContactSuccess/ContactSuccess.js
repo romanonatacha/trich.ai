@@ -12,7 +12,7 @@ class Modal extends Component {
               <section className="modal-main">
                 We have received your message and we will get back to you as soon as possible.<span>Thanks!</span>
                 <Link to='/contact' className='close-btn'>
-                  <i class="fas fa-times"></i>
+                  <i className="fas fa-times"></i>
                 </Link>
               </section>
             </div>
