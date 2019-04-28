@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "5be5be1c42a639be02e9",
+    "revision": "4031679b5d3eba63d552",
     "url": "/trich.ai/static/css/main.ed22d8d2.chunk.css"
   },
   {
-    "revision": "5be5be1c42a639be02e9",
-    "url": "/trich.ai/static/js/main.9557717d.chunk.js"
+    "revision": "4031679b5d3eba63d552",
+    "url": "/trich.ai/static/js/main.91cff3cf.chunk.js"
   },
   {
     "revision": "7a47e99e1869248d27a1",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/trich.ai/static/media/machine.12c0bd8a.jpg"
   },
   {
-    "revision": "cb322f4e1c29a08f181e22c4c698e342",
+    "revision": "e690ef30e61b4c1600438a43ef545524",
     "url": "/trich.ai/index.html"
   }
 ];
