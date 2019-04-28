@@ -5,10 +5,10 @@ import './Menu.scss'
 
 const Menu = () => (
     <div className='menu'>
-        <a href='http://localhost:3000/' className='menu__logo'>trich.ai</a>
+        <a href='https://trich.ai' className='menu__logo'>trich.ai</a>
         <Navbar className='menu__links'>
             <NavItem className='menu__links__logo'>
-                <a href='http://localhost:3000/'>trich.ai</a>
+                <a href='https://trich.ai'>trich.ai</a>
             </NavItem>
             <NavItem className='menu__links__item'>
                 <Link data-toggle="collapse" data-target=".sidenav" to='/solutions'>Solutions</Link>

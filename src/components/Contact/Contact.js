@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import './Contact.scss'
 import FormErrors from '../FormErrors/FormErrors'
+import '../FormErrors/FormErrors.scss'
 
 class Contact extends Component {
   state = {
-    nome: '',
-    replyto: '',
+    name: '',
+    email: '',
     subject: '',
-    comentarios: '',
-    formErrors: {nome: '', replyto: '', subject: '', comentarios: ''},
-    nomeValid: false,
-    replytoValid: false,
+    message: '',
+    formErrors: {name: '', email: '', subject: '', message: ''},
+    nameValid: false,
+    emailValid: false,
     subjectValid: false,
     comantariosValid: false,
     formValid: false
@@ -25,45 +26,45 @@ class Contact extends Component {
 
   validateField(fieldName, value) {
     let fieldValidationErrors = this.state.formErrors;
-    let nomeValid = this.state.nomeValid;
-    let replytoValid = this.state.replytoValid;
+    let nameValid = this.state.nameValid;
+    let emailValid = this.state.emailValid;
     let subjectValid = this.state.subjectValid;
-    let comentariosValid = this.state.comentariosValid;
+    let messageValid = this.state.messageValid;
   
     switch(fieldName) {
-      case 'nome':
-        nomeValid = value.length >= 4;
-        fieldValidationErrors.nome = nomeValid ? '' : ' is too short';
+      case 'name':
+        nameValid = value.length >= 4;
+        fieldValidationErrors.name = nameValid ? '' : ' is too short';
         break;
-      case 'replyto':
-        replytoValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors.replyto = replytoValid ? '' : ' is invalid';
+      case 'email':
+        emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+        fieldValidationErrors.email = emailValid ? '' : ' is invalid';
         break;
       case 'subject':
         subjectValid = value.length >= 3;
         fieldValidationErrors.subject = subjectValid ? '': ' is too short';
         break;
-        case 'comentarios':
-        comentariosValid = value.length >= 5;
-        fieldValidationErrors.comentarios = comentariosValid ? '': ' is too short';
+        case 'message':
+        messageValid = value.length >= 5;
+        fieldValidationErrors.message = messageValid ? '': ' is too short';
         break;
       default:
         break;
     }
     this.setState({formErrors: fieldValidationErrors,
-                    nomeValid: nomeValid,
-                    replytoValid: replytoValid,
+                    nameValid: nameValid,
+                    emailValid: emailValid,
                     subjectValid: subjectValid,
-                    comentariosValid: comentariosValid,
+                    messageValid: messageValid,
                   }, this.validateForm);
   }
   
   validateForm() {
     this.setState({formValid:
-      this.state.nomeValid &&
-      this.state.replytoValid &&
+      this.state.nameValid &&
+      this.state.emailValid &&
       this.state.subjectValid &&
-      this.state.comentariosValid
+      this.state.messageValid
     });
   }
 
@@ -75,15 +76,12 @@ class Contact extends Component {
         </div>
         <div className='contact__container'>
           <div className='contact__container__form'>
-          <div className='panel panel-default'>
-            <FormErrors formErrors={this.state.formErrors} />
-          </div>
             <form className='col s12' action="http://formmail.kinghost.net/formmail.cgi" method="POST">
               <div className='row'>
-                <input type="hidden" name="recipient" value="trichcontact@gmail.com" />
-                <input type="hidden" name="redirect" value='http://localhost:3000/contact/success' />
+                <input type="hidden" name="recipient" value="contact@trich.ai" />
+                <input type="hidden" name="redirect" value='https://trich.ai/contact/success' />
                 <input type="hidden" name="subject" value="subject" />
-                <input type="hidden" name="email" value="trichcontact@gmail.com" />
+                <input type="hidden" name="email" value="contact@trich.ai" />
                 <input type="text" name="_gotcha" className='gotcha' />
               </div>
               <div className='row'>
@@ -91,7 +89,7 @@ class Contact extends Component {
                   <input
                     type="text"
                     size="30"
-                    name="nome"
+                    name="name"
                     value={this.state.name}
                     onChange={(event) => this.handleUserInput(event)}
                   />
@@ -103,7 +101,7 @@ class Contact extends Component {
                   <input
                     type="text"
                     size="30"
-                    name="replyto"
+                    name="email"
                     value={this.state.email}
                     onChange={(event) => this.handleUserInput(event)}
                   />
@@ -127,11 +125,14 @@ class Contact extends Component {
                     className='materialize-textarea'
                     type="text"
                     size="35"
-                    name="comentarios"
+                    name="message"
                     value={this.state.message}
                     onChange={(event) => this.handleUserInput(event)}>
                   </textarea>
                   <labe>message</labe>
+                </div>
+                <div className='panel panel-default'>
+                  <FormErrors formErrors={this.state.formErrors} />
                 </div>
               </div>
               <div className='row'>

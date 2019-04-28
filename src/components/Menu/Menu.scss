@@ -12,12 +12,14 @@
         @include mobile-tablet {
             display: block;
             position: absolute;
-            top: 15px;
+            top: 0;
             right: 0;
             color: white;
             z-index: 9;
             font-weight: 600;
-            font-size: 20px;
+            font-size: 38px;
+            padding: 5px 20px;
+            font-family: $logo-font;
         }
     }
 
@@ -25,9 +27,12 @@
         background-color: inherit;
         &__logo {
             a {
-                font-weight: 600;
-                font-size: 20px;
+                font-family: $logo-font;
+                font-size: 40px;
                 margin-right: 100px;
+                &:hover {
+                    color: white;
+                }
             }
         }
         @include mobile-tablet {

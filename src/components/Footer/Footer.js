@@ -2,26 +2,29 @@ import React from 'react'
 import './Footer.scss'
 
 const Footer = () => (
-    <footer class="footer page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="nav social-icons justify-content-end">
-                    <a class="nav-link" href="https://www.kaggle.com/kabure/kernels" target="_blank" title="Kaggle">
-                        <i class="fab fa-kaggle"></i>
+    <footer className="footer page-footer">
+        <div className="container">
+            <div className="row">
+                <div className="nav social-icons justify-content-end">
+                    <a className="nav-link" href="https://www.kaggle.com/kabure/kernels" target="_blank" title="Kaggle" rel="noopener noreferrer">
+                        <i className="fab fa-kaggle"></i>
                     </a>
-                    <a class="nav-link" href="https://github.com/kaburelabs" target="_blank" title="GitHub">
-                        <i class="fab fa-github"></i>
+                    <a className="nav-link" href="https://github.com/kaburelabs" target="_blank" title="GitHub" rel="noopener noreferrer">
+                        <i className="fab fa-github"></i>
                     </a>
-                    <a class="nav-link" href="https://www.linkedin.com/in/leonardo-ferreira-70212028/" target="_blank" title="Linkedin">
-                        <i class="fab fa-linkedin"></i>
+                    <a className="nav-link" href="https://www.linkedin.com/in/leonardo-ferreira-70212028/" target="_blank" title="Linkedin" rel="noopener noreferrer">
+                        <i className="fab fa-linkedin"></i>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        <div className="footer-copyright">
+            <div className="container">
+            <a className="grey-text text-lighten-4" href="#!">
+                TRICH SOLUCOES EM DADOS E TECNOLOGIA - 29.514.225/0001-48</a>
+            <a className='right' href='https://www.linkedin.com/in/natacha-romano/' target='_blank' rel="noopener noreferrer">
+                © 2019 developed by Natacha Romano 
+            </a>
             </div>
         </div>
     </footer>
