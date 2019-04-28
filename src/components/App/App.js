@@ -22,7 +22,7 @@ const App = () => (
     <Route exact path={process.env.PUBLIC_URL + '/articles'} component={Articles} />
     <Route exact path={process.env.PUBLIC_URL + '/about'} component={About} />
     <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
-    <Route exact path={process.env.PUBLIC_URL + '/contact/success'} component={ContactSuccess} />
+    <Route exact path='https://trich.ai/contact/success' component={ContactSuccess} />
     <Footer />
   </>       
 )
