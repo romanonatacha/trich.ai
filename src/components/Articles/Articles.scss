@@ -21,6 +21,7 @@
             &__img.card-image {
                 img {
                     width: auto;
+                    object-fit: cover;
                     @include mobile-tablet {
                         width: 100%;
                         height: auto;
