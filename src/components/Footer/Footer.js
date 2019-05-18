@@ -12,7 +12,7 @@ const Footer = () => (
                     <a className="nav-link" href="https://github.com/kaburelabs" target="_blank" title="GitHub" rel="noopener noreferrer">
                         <i className="fab fa-github"></i>
                     </a>
-                    <a className="nav-link" href="https://www.linkedin.com/in/leonardo-ferreira-70212028/" target="_blank" title="Linkedin" rel="noopener noreferrer">
+                    <a className="nav-link" href="https://www.linkedin.com/company/trich-ai/" target="_blank" title="Linkedin" rel="noopener noreferrer">
                         <i className="fab fa-linkedin"></i>
                     </a>
                 </div>
