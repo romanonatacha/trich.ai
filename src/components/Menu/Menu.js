@@ -11,11 +11,11 @@ const Menu = () => (
                 <a href='https://trich.ai'>trich.ai</a>
             </NavItem>
             <NavItem className='menu__links__item'>
+                <a href='https://portfolio.trich.ai' target="_target">Portfolio</a>
+            </NavItem>
+            <NavItem className='menu__links__item'>
                 <Link data-toggle="collapse" data-target=".sidenav" to='/solutions'>Solutions</Link>
             </NavItem>
-            {/* <NavItem className='menu__links__item'>
-                <Link to='/portfolio'>Portfolio</Link>
-            </NavItem> */}
             <NavItem className='menu__links__item'>
                 <Link to='/articles'>Articles</Link>
             </NavItem>
