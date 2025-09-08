@@ -7,7 +7,7 @@ const Home = () => (
       <div id="large-header" className="large-header">
         <canvas id="demo-canvas"></canvas>
         <div className="header">
-          <h1 className="header__title main-title">trich.xyz</h1>
+          <h1 className="header__title main-title">trich</h1>
           <p className="header__subtitle">
             Intelligent solutions to extract the most valuable insights of your
             data.

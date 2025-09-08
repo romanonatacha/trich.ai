@@ -5,11 +5,11 @@ import "./Menu.scss";
 const Menu = () => (
   <div className="menu">
     <a href="/" className="menu__logo">
-      trich.xyz
+      trich
     </a>
     <Navbar className="menu__links">
       <NavItem className="menu__links__logo">
-        <a href="/">trich.xyz</a>
+        <a href="/">trich</a>
       </NavItem>
       <NavItem className="menu__links__item">
         <a href="https://portfolio.trich.xyz" target="_target">
