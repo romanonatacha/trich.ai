@@ -3,7 +3,8 @@ Project created for trich.ai company
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Deployed
-[https://trich.ai](https://trich.ai)
+
+[https://trich.xyz](https://trich.xyz)
 
 ## Available Scripts
 
