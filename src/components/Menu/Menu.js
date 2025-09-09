@@ -4,15 +4,19 @@ import "./Menu.scss";
 
 const Menu = () => (
   <div className="menu">
-    <a href="/" className="menu__logo">
+    <Link to="/" className="menu__logo">
       trich
-    </a>
+    </Link>
     <Navbar className="menu__links">
       <NavItem className="menu__links__logo">
-        <a href="/">trich</a>
+        <Link to="/">trich</Link>
       </NavItem>
       <NavItem className="menu__links__item">
-        <a href="https://portfolio.trich.xyz" target="_target">
+        <a
+          href="https://portfolio.trich.xyz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Portfolio
         </a>
       </NavItem>

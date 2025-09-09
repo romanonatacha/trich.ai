@@ -1,31 +1,31 @@
-@import '../../variables.scss';
+@use "../../variables" as *;
 
 .applications {
-    width: 60%;
-    margin: 0 auto;
-    &__list {
-        @include card;
-        &__item {
-            @include border;
-            padding: 20px;
-            i {
-                color: $main-blue;
-                font-size: 30px;
-            }
-            &__title {
-                font-size: 18px;
-                color: $gray;
-                margin-top: 23px;
-                font-weight: 700;
-            }
-            &__text {
-                font-size: 14px;
-                color: $gray;
-                line-height: 2;
-            }
-        }
+  width: 60%;
+  margin: 0 auto;
+  &__list {
+    @include card;
+    &__item {
+      @include border;
+      padding: 20px;
+      i {
+        color: $main-blue;
+        font-size: 30px;
+      }
+      &__title {
+        font-size: 18px;
+        color: $gray;
+        margin-top: 23px;
+        font-weight: 700;
+      }
+      &__text {
+        font-size: 14px;
+        color: $gray;
+        line-height: 2;
+      }
     }
-    @include mobile-tablet {
-        width: 90%;
-    }
+  }
+  @include mobile-tablet {
+    width: 90%;
+  }
 }

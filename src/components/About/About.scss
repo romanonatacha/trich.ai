@@ -1,64 +1,63 @@
-@import '../../variables.scss';
+@use "../../variables" as *;
 
 .about {
-    margin-top: 64px;
-    @include desktop {
-        padding: 50px;
-    }
-    &__container {
-        background-color: white;
-        width: 100%;
-        &__info {
-            @include border;
-            padding: 20px;
-            @include desktopXS {
-                height: 900px;
-                overflow: auto;
-                @media screen and (max-width: 1423px) {
-                    height: 1150px;
-                }
-            }
-            &__title {
-                font-weight: 700;
-                font-size: 40px;
-            }
-            &__title-logo {
-                font-size: 22px;
-                font-weight: 700;
-                @media (min-width: #{$mobile-width + 1}) {
-                    padding: 20px 30px;
-                }
-                @include desktopXS {
-                    padding: 20px 50px;
-                }
-            }
-            &__text {
-                font-size: 16px;
-                color: $gray;
-                line-height: 2;
-                padding-top: 40px;
-                text-align: justify;
-                @include desktop {
-                    font-size: 18px;
-                }
-
-            }
-            &.text {
-                @media (min-width: #{$mobile-width + 1}) {
-                    padding: 50px;
-                }
-                @media (min-width: 1500px) {
-                    padding: 40px 100px;
-                }
-            }
+  margin-top: 64px;
+  @include desktop {
+    padding: 50px;
+  }
+  &__container {
+    background-color: white;
+    width: 100%;
+    &__info {
+      @include border;
+      padding: 20px;
+      @include desktopXS {
+        height: 900px;
+        overflow: auto;
+        @media screen and (max-width: 1423px) {
+          height: 1150px;
         }
-        .padding {
-            padding: 30px;
-            @include desktopXS {
-                padding: 30px 30px 80px;
-                float: left;
-                width: 50%;
-            }
+      }
+      &__title {
+        font-weight: 700;
+        font-size: 40px;
+      }
+      &__title-logo {
+        font-size: 22px;
+        font-weight: 700;
+        @media (min-width: #{$mobile-width + 1}) {
+          padding: 20px 30px;
         }
+        @include desktopXS {
+          padding: 20px 50px;
+        }
+      }
+      &__text {
+        font-size: 16px;
+        color: $gray;
+        line-height: 2;
+        padding-top: 40px;
+        text-align: justify;
+        @include desktop {
+          font-size: 18px;
+        }
+      }
+      &.text {
+        @media (min-width: #{$mobile-width + 1}) {
+          padding: 50px;
+        }
+        @media (min-width: 1500px) {
+          padding: 40px 100px;
+        }
+      }
     }
+    .padding {
+      padding: 30px;
+      @include desktopXS {
+        padding: 30px 30px 80px;
+        float: left;
+        width: 50%;
+      }
+    }
+  }
 }

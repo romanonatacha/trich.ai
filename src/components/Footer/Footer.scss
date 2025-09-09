@@ -1,70 +1,70 @@
-@import '../../variables.scss';
+@use "../../variables" as *;
 
 .footer {
-    background-color: black;
-    clear: both;
-    padding: 20px 0;
+  background-color: black;
+  clear: both;
+  padding: 20px 0;
 
-    .social-icons {
-      float: right;
+  .social-icons {
+    float: right;
 
-      .nav-link {
-        margin: 0 8px;
-        i {
-          font-size: 30px;
-          color: white;
-          @include mobile {
-            font-size: 20px;
-          }
-          &:hover {
-            color: $main-blue;
-          }
-          &:focus {
-            color: darken($main-blue, 20%);
-          }
-        }
-      }
-    }
-    &-copyright {
-      @include mobile-tablet {
-        text-align: center;
-      }
-      a {
+    .nav-link {
+      margin: 0 8px;
+      i {
+        font-size: 30px;
         color: white;
+        @include mobile {
+          font-size: 20px;
+        }
         &:hover {
           color: $main-blue;
         }
-      }
-      .company {
-        @include mobile-tablet {
-          margin-bottom: 20px;
-          display: block;
-        }
-        @include mobile {
-          font-size: 12px;
-        }
-      }
-      .creator {
-        @include desktop {
-          float: right;
-        }
-        @include mobile-tablet {
-          display: block;
-        }
-        @include mobile {
-          font-size: 10px;
+        &:focus {
+          color: darken($main-blue, 20%);
         }
       }
     }
+  }
+  &-copyright {
+    @include mobile-tablet {
+      text-align: center;
+    }
+    a {
+      color: white;
+      &:hover {
+        color: $main-blue;
+      }
+    }
+    .company {
+      @include mobile-tablet {
+        margin-bottom: 20px;
+        display: block;
+      }
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+    .creator {
+      @include desktop {
+        float: right;
+      }
+      @include mobile-tablet {
+        display: block;
+      }
+      @include mobile {
+        font-size: 10px;
+      }
+    }
+  }
 }
 
 // sticky footer
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}

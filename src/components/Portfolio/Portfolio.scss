@@ -1,7 +1,7 @@
-@import '../../variables.scss';
+@use "../../variables" as *;
 
 .portfolio {
-    &__header {
-        @include header;
-    }
+  &__header {
+    @include header;
+  }
 }
